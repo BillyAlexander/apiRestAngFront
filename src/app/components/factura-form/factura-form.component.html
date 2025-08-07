@@ -1,0 +1,14 @@
+<h2>{{ isEditMode ? 'Editar Factura' : 'Crear Factura' }}</h2>
+<form (ngSubmit)="save()">
+  <label>Nombre:</label>
+  <input [(ngModel)]="factura.name" name="name" required />
+
+  <label>Dirección:</label>
+  <input [(ngModel)]="factura.address" name="address" required/>
+
+  <label>Total:</label>
+  <input [(ngModel)]="factura.total" name="total" type="number"  required/>
+
+  <button type="submit">{{ isEditMode ? 'Actualizar' : 'Crear' }}</button>
+  <button type="button" routerLink="/facturas">Cancelar</button>
+</form>

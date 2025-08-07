@@ -1,0 +1,21 @@
+<h2>Lista de Facturas</h2>
+<a routerLink="/facturas/new">Crear nueva factura</a>
+<table>
+  <thead>
+    <tr>
+      <th>ID</th><th>Nombre</th><th>Dirección</th><th>Total</th><th>Acciones</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let f of facturas">
+      <td>{{ f.id }}</td>
+      <td>{{ f.name }}</td>
+      <td>{{ f.address }}</td>
+      <td>{{ f.total }}</td>
+      <td>
+        <a [routerLink]="['/facturas/edit', f.id]">Editar</a>
+        <button (click)="deleteFactura(f.id)">Eliminar</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
