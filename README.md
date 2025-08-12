@@ -66,3 +66,11 @@ file `factura-form.component.html`
 
 ## 🧩 Config  app.module.ts
 (Config modules & imports, showing before)
+
+
+## Specific Version
+npx @angular/cli@15.2.10 new factura-app --routing --style=scss
+npx @angular/cli@15.2.10 new mi-proyecto-angular
+
+ng version
+
