@@ -70,6 +70,7 @@ file `factura-form.component.html`
 
 ## Specific Version
 npx @angular/cli@15.2.10 new factura-app --routing --style=scss
+
 npx @angular/cli@15.2.10 new mi-proyecto-angular
 
 ng version
